@@ -1,0 +1,21 @@
+.swiper-pagination-item {
+  height: 50px;
+  width: 50px;
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  opacity: 1;
+  transition: all ease .2s;
+  box-shadow: $box-shadow-sm;
+  padding: 13.5px;
+  & > * {
+    color: $primary;
+  }
+}
+
+.swiper-pagination-item.swiper-button-disabled {
+  opacity: 0;
+}

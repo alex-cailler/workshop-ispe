@@ -1,0 +1,17 @@
+.social-network-list {
+  .social-network-item {
+    border-radius: 50rem;
+    background-color: #eeeeee;
+    padding: 10px 23px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    & span {
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

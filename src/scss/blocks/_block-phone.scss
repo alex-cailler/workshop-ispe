@@ -1,0 +1,84 @@
+.phone {
+  .phone-container {
+    .phone-slide-container {
+      .phone-slide-list {
+        padding-left: 0;
+        li {
+          cursor: pointer;
+          list-style: none;
+          margin-bottom: 30px;
+          display: flex;
+          align-items: center;
+          color: $text-muted;
+          font-size: map_get($font-sizes, md);
+          transition: color ease-in .3s;
+          font-weight: 400;
+          .time-bar {
+            margin-right: 40px;
+            width: 6px;
+            border-radius: 50rem;
+            background-color: $text-muted;
+            position: relative;
+            height: 80px;
+            overflow: hidden;
+            & > .progress-bar {
+              transition: height 1s;
+              position: absolute;
+              left: 0;
+              right: 0;
+              height: 0;
+              background-color: $primary;
+            }
+          }
+        }
+        li.active {
+          color: $primary;
+          font-weight: bold;
+        }
+      }
+    }
+    .phone-slide {
+      .phone-slide-preview {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 18px;
+        border-radius: 18px;
+        -webkit-box-shadow: 0 10px 100px 0 rgb(0 0 0 / 10%);
+        box-shadow: 0 10px 100px 0 rgb(0 0 0 / 10%);
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 302px;
+        -ms-flex: 0 0 302px;
+        flex: 0 0 302px;
+        width: 260px;
+        height: 600px;
+        overflow: hidden;
+        margin: auto;
+        video {
+          border-radius: 18px;
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:  map_get($grid-breakpoints, md)) {
+  .phone {
+    .phone-container {
+      .phone-slide-container {
+        .phone-slide-list {
+          li {
+            font-size: 22px;
+            .time-bar {
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

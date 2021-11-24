@@ -1,0 +1,12 @@
+#hero-blog-home {
+  background-color: $gray-900;
+  .icon-btn {
+    background-color: $gray-200;
+    color: black;
+    transition: all ease 0.3s;
+    &:hover {
+      background-color: $gray-300;
+    }
+  }
+}
+

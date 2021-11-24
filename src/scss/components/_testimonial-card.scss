@@ -1,0 +1,26 @@
+.testimonial.card {
+  .testimonial-content {
+    i {
+      font-style: italic;
+      font-size: 13px;
+      line-height: 2em;
+      font-weight: 500;
+    }
+  }
+  .testimonial-author-info {
+    & > span:last-child {
+      font-size: 14px;
+      color: $gray-400;
+    }
+  }
+  .testimonial-author-image-container {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

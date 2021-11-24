@@ -1,0 +1,38 @@
+#footer {
+  background: $gray-900;
+  color: #8C86A1;
+  .footer-logo {
+    text-align: start;
+    svg {
+      width: 170px;
+      height: 54px;
+    }
+  }
+  .widget {
+    list-style: none;
+    h2.widgettitle {
+      font-size: 20px;
+      color: $white;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    ul.sub-menu {
+      margin-left: 16px !important;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        margin-bottom: 16px;
+        margin-right: 16px;
+        list-style: none;
+        a {
+          font-size: 20px;
+          color: #8C86A1;
+          text-decoration: none;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

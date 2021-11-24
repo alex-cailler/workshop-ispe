@@ -1,0 +1,252 @@
+// Colors
+
+$white:    #fff !default;
+$gray-100: #f6f9fc !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #8898aa !default;   // Line footer color
+$gray-700: #525f7f !default;   // Line p color
+$gray-800: #32325d !default;   // Line heading color
+$gray-900: #0f142a !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+), $grays);
+
+$blue:    #1586DB !default;
+$indigo:  #5603ad !default;
+$purple:  #8965e0 !default;
+$pink:    #f3a4b5 !default;
+$red:     #f5365c !default;
+$orange:  #fb6340 !default;
+$yellow:  #ffd600 !default;
+$green:   #2dce89 !default;
+$teal:    #1586DB !default;
+$cyan:    #2bffc6 !default;
+
+$colors: () !default;
+$colors: map-merge((
+        "blue":         $blue,
+        "indigo":       $indigo,
+        "purple":       $purple,
+        "pink":         $pink,
+        "red":          $red,
+        "orange":       $orange,
+        "yellow":       $yellow,
+        "green":        $green,
+        "teal":         $teal,
+        "cyan":         $cyan,
+        "white":        $white,
+        "gray":         $gray-600,
+        "light":        $gray-400,
+        "lighter":      $gray-200,
+        "gray-dark":    $gray-800,
+        "gray-darker":  $gray-900
+), $colors);
+
+$default:       #08002E !default;
+$primary:       #08002E !default;
+$secondary:     #FED330 !default;
+$success:       $green !default;
+$info:          $teal !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-500 !default;
+$lighter:       $gray-100 !default;
+$dark:          $gray-900 !default;
+$darker:        darken($gray-900, 15%) !default;
+
+$facebook:      #3b5999 !default;
+$twitter:       #1da1f2 !default;
+$google-plus:   #dd4b39 !default;
+$instagram:     #e4405f !default;
+$pinterest:     #bd081c !default;
+$youtube:       #cd201f !default;
+$slack:         #3aaf85 !default;
+$dribbble:      #ea4c89 !default;
+$github:        #222222 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+        "default":      $default,
+        "primary":      $primary,
+        "secondary":    $secondary,
+        "blue":         $blue,
+        "success":      $success,
+        "info":         $info,
+        "warning":      $warning,
+        "danger":       $danger,
+        "white":        $white,
+        "neutral":      $white,
+        "light":        $light,
+        "lighter":      $lighter,
+        "dark":         $dark,
+        "gray-darker":  $gray-900,
+        "darker":       $darker
+), $theme-colors);
+
+// Spacing
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+        -9: -($spacer * 10),
+        -8: -($spacer * 8),
+        -7: -($spacer * 6),
+        -6: -($spacer * 4.5),
+        -5: -($spacer * 3),
+        -4: -($spacer * 1.5),
+        -3: -$spacer,
+        -2: -($spacer * .5),
+        -1: -($spacer * .25),
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3),
+        6: ($spacer * 4.5),
+        7: ($spacer * 6),
+        8: ($spacer * 8),
+        9: ($spacer * 10)
+), $spacers);
+
+// Font
+
+$font-family-title:           'Nunito', sans-serif;
+$font-family-base:            'Red Hat Display', sans-serif;
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+// Muted
+$text-muted: #6A6E84;
+
+// Heading
+
+$headings-font-weight: 600;
+$h1-font-size: 4.05rem;
+
+// Button
+
+$btn-border-radius: 10px;
+$btn-font-size: 1.125rem;
+$btn-padding-y: 1rem;
+$btn-padding-x: 2.125rem;
+$btn-font-family: 'Red Hat Display', sans-serif;
+$btn-font-size-sm: 1rem;
+$btn-padding-x-sm: 18px;
+$btn-padding-y-sm: 7px;
+
+// Shadows
+
+$box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.15);
+
+// Card
+
+$card-border-radius: 15px;
+$card-border-width: 0px;
+$card-cap-bg: $white;
+$card-spacer-x: 35px;
+$card-spacer-y: 35px;
+$card-cap-padding-y: 0;
+$card-cap-padding-x: 0;
+
+
+// Navbar
+
+$nav-link-color: $primary;
+$nav-link-font-size: 18px;
+$nav-link-font-weight: 500;
+
+
+// Inputs
+
+$input-font-size: 15px !default;
+$input-padding-y: 1rem;
+$input-padding-x: 2.125rem;
+$input-border-radius: 15px;
+$input-border-width: 1px;
+$input-color: $primary;
+$input-bg: $gray-200;
+$input-border-color: $gray-300;
+$input-placeholder-color: $text-muted;
+
+
+// Inputs Focus
+
+$input-focus-bg: #f9f9fd;
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: 0px 12px 20px #0300520f;
+
+
+// Forms
+
+$form-label-color: $text-muted;
+$form-label-font-weight: 300;
+$form-label-font-size: 16px !default;
+$form-text-font-size: 16px !default;
+
+
+
+// Accordeon
+
+$accordion-padding-y:                     2rem;
+$accordion-padding-x:                     2rem;
+$accordion-color:                         $text-muted;
+$accordion-bg:                            white;
+$accordion-border-width:                  0px;
+$accordion-border-color:                  rgba($black, .125);
+$accordion-border-radius:                 18px;
+
+$accordion-body-padding-y:                $accordion-padding-y;
+$accordion-body-padding-x:                $accordion-padding-x;
+
+$accordion-button-padding-y:              $accordion-padding-y;
+$accordion-button-padding-x:              $accordion-padding-x;
+$accordion-button-active-color:           $primary;
+
+// $accordion-button-focus-border-color:     $input-focus-border-color;
+// $accordion-button-focus-box-shadow:       0px 4px 17px 1px rgba(226, 226, 226, 0.35);
+
+$accordion-icon-width:                    1.25rem;
+$accordion-icon-transition:               transform .2s ease-in-out;
+$accordion-icon-transform:                rotate(180deg);
+
+$accordion-button-active-icon:            url("data:image/svg+xml,<svg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M14.873 9.7812C14.7375 9.78137 14.6034 9.75477 14.4782 9.70293C14.3531 9.65109 14.2394 9.57503 14.1438 9.47913L7.99797 3.3334L1.85215 9.47913C1.65822 9.66992 1.39675 9.77636 1.12471 9.77525C0.85266 9.77414 0.59207 9.66558 0.399702 9.47321C0.207334 9.28085 0.0987726 9.02026 0.0976648 8.74821C0.0965571 8.47616 0.202993 8.2147 0.393788 8.02077L7.26879 1.14577C7.46218 0.95239 7.72447 0.84375 7.99797 0.84375C8.27146 0.84375 8.53375 0.95239 8.72715 1.14577L15.6021 8.02077C15.7464 8.16499 15.8446 8.34874 15.8844 8.54877C15.9241 8.74881 15.9037 8.95615 15.8257 9.14458C15.7476 9.33301 15.6155 9.49407 15.4459 9.60739C15.2763 9.7207 15.0769 9.78119 14.873 9.7812Z' fill='black'/></svg>");
+$accordion-button-icon:                   url("data:image/svg+xml,<svg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M14.873 9.7812C14.7375 9.78137 14.6034 9.75477 14.4782 9.70293C14.3531 9.65109 14.2394 9.57503 14.1438 9.47913L7.99797 3.3334L1.85215 9.47913C1.65822 9.66992 1.39675 9.77636 1.12471 9.77525C0.85266 9.77414 0.59207 9.66558 0.399702 9.47321C0.207334 9.28085 0.0987726 9.02026 0.0976648 8.74821C0.0965571 8.47616 0.202993 8.2147 0.393788 8.02077L7.26879 1.14577C7.46218 0.95239 7.72447 0.84375 7.99797 0.84375C8.27146 0.84375 8.53375 0.95239 8.72715 1.14577L15.6021 8.02077C15.7464 8.16499 15.8446 8.34874 15.8844 8.54877C15.9241 8.74881 15.9037 8.95615 15.8257 9.14458C15.7476 9.33301 15.6155 9.49407 15.4459 9.60739C15.2763 9.7207 15.0769 9.78119 14.873 9.7812Z' fill='black'/></svg>");
+
+
+// Pagination
+
+$pagination-padding-y:              .375rem;
+$pagination-padding-x:              .75rem;
+$pagination-padding-y-sm:           .25rem;
+$pagination-padding-x-sm:           .5rem;
+$pagination-padding-y-lg:           .75rem;
+$pagination-padding-x-lg:           1.5rem;
+$pagination-color:                  black;
+$pagination-bg:                     $white;
+$pagination-border-radius:          50rem;
+$pagination-border-color:           transparent;
+$pagination-focus-bg:               $gray-200;
+$pagination-focus-outline:          0;
+$pagination-hover-bg:               $gray-200;
+$pagination-hover-border-color:     transparent;
+$pagination-disabled-color:         $gray-600;
+$pagination-disabled-bg:            $white;
+$pagination-disabled-border-color:  transparent;
+$pagination-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;

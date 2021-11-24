@@ -1,0 +1,39 @@
+.potato {
+  position: absolute;
+  width: 150px;
+  border-radius: 50rem;
+  background-color: $primary;
+  &.large {
+    width: 300px;
+  }
+}
+
+.potato.left {
+  height: 100% !important;
+  left: 0;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+}
+
+.potato.right {
+  height: 100% !important;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.potato.top-right {
+  right: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(125%, -73%) rotate(45deg);
+}
+
+.potato.top-left {
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate(-125%, -73%) rotate(-45deg);
+}

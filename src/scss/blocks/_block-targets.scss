@@ -1,0 +1,16 @@
+.target {
+  .wrapper-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 40px;
+    img {
+
+    }
+  }
+  .advantage-card {
+    background-color: map_get($colors, lighter);
+    border-radius: 40px;
+    padding: 3rem;
+  }
+}

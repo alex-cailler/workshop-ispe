@@ -1,0 +1,185 @@
+form {
+  .form-label {
+    width: 100%;
+  }
+  button.action-button {
+    color: #08002E !important;
+    background-color: #FED330 !important;
+    display: inline-block !important;
+    font-family: "Red Hat Display", sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    border: 1px solid #FED330 !important;
+    padding: 12px 21px !important;
+    font-size: 1.2rem !important;
+    border-radius: 50rem !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  }
+  .wpcf7-radio {
+    column-gap: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wpcf7-radio .wpcf7-list-item {
+    display: block;
+    flex: 1;
+    margin-left: 0;
+  }
+  .wpcf7-radio .wpcf7-list-item label {
+    align-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    min-height: 50px;
+    padding: 7px;
+    position: relative;
+    transition: all .2s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+
+    & input[type=radio] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      height: 100%;
+      left: 0;
+      outline: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      &:checked:before {
+        background-color: rgba(254, 211, 48, 0.3);
+        transition: all .2s ease;
+        border-width: 3px;
+        border-color: transparent;
+        border-left-color: #FED330;
+      }
+
+      &:before {
+        border: solid 2px #08002e24;
+        border-radius: 9px;
+        content: "";
+        display: block;
+        height: calc(100% + 2px);
+        left: -1px;
+        position: absolute;
+        top: -1px;
+        transition: all .2s ease;
+        width: calc(100% + 2px);
+      }
+    }
+
+    & span.wpcf7-list-item-label {
+      font-size: 16px;
+      color: $primary;
+      font-weight: $font-weight-bold;
+      height: 100%;
+      z-index: 2;
+    }
+
+    &:before {
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 21px;
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lighten($secondary, 10%);
+      height: 30px;
+      width: 30px;
+      border-radius: 3px;
+      line-height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 5px;
+      margin: 7px;
+    }
+  }
+  .wpcf7-radio {
+    & .wpcf7-list-item:first-child {
+      & label:before {
+        content: "🏫";
+      }
+    }
+    & .wpcf7-list-item:nth-child(2) {
+      & label:before {
+        content: "🕵️‍♂️";
+      }
+    }
+    & .wpcf7-list-item:last-child {
+      & label:before {
+        content: "👨‍👩‍👦";
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  form {
+    .wpcf7-radio {
+      column-gap: 1.5rem;
+      justify-content: initial;
+      display: block;
+      & .wpcf7-list-item + .wpcf7-list-item {
+          margin: 10px 0 0 0;
+      }
+      & .wpcf7-list-item label {
+        &:before {
+          right: 0;
+          left: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  form .wpcf7-radio {
+    & .wpcf7-list-item + .wpcf7-list-item {
+      margin: 0;
+    }
+    & .wpcf7-list-item label {
+      align-items: flex-end;
+      min-height: 120px;
+    }
+  }
+}
+
+.wpcf7-response-output {
+  position: relative;
+  padding: .75rem 1.25rem !important;
+  margin: 0 0 1rem 0 !important;
+  border: 1px solid transparent !important;
+  border-radius: .25rem;
+  display: flex !important;
+  width: 100%;
+  align-items: center;
+  &.wpcf7-validation-errors {
+    color: #721c24 !important;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    & svg {
+      fill: #721c24 !important;
+    }
+  }
+}
+
+// box-shadow: inset 0 30px 0 hsla(0,0%,100%,.15),0 3px 36px rgba(0,0,0,0.1)!important;

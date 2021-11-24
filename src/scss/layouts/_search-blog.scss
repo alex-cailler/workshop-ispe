@@ -1,0 +1,21 @@
+.page-search-wrapper {
+  .left-content {
+    min-height: 90vh;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+  }
+  .right-content {
+    min-height: 90vh;
+    height: 90vh;
+    border-left: solid 1px #eeeeee;
+  }
+}
+
+@media (max-width: map_get($grid-breakpoints, lg)) {
+  .page-search-wrapper {
+    .right-content {
+      border-left: transparent;
+    }
+  }
+}

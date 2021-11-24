@@ -1,0 +1,27 @@
+/* Colors variables */
+$colors: (
+        'primary':    $primary,
+        'secondary':  $secondary,
+        'blue':       $blue,
+        'muted':      $gray-600,
+        'light':      $gray-200,
+        'lighter':    $gray-100,
+        'black':      $black,
+        'white':      $white,
+);
+
+/* Generate Colors classes */
+@each $name, $color in $colors {
+  .has-#{$name}-color {
+    color: $color;
+  }
+  .has-#{$name}-background-color {
+    background-color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .has-#{$name}-background-color-50 {
+    background-color: lighten($color, 50%);
+  }
+}

@@ -1,0 +1,94 @@
+$basePath = '../../../';
+
+/* red-hat-display-regular - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url($basePath + 'fonts/RedHatDisplay-Regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Regular.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Regular.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-italic - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url($basePath + 'fonts/RedHatDisplay-Italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Italic.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Italic.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-500 - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url($basePath + 'fonts/RedHatDisplay-Medium.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Medium.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Medium.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-500italic - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 500;
+  src: url($basePath + 'fonts/RedHatDisplay-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-MediumItalic.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-MediumItalic.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-700 - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url($basePath + 'fonts/RedHatDisplay-Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Bold.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-700italic - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url($basePath + 'fonts/RedHatDisplay-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-BoldItalic.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-BoldItalic.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-900 - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url($basePath + 'fonts/RedHatDisplay-Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-Bold.ttf') format('truetype') /* Safari, Android, iOS */
+}
+/* RedHatDisplay-900italic - latin */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 900;
+  src: url($basePath + 'fonts/RedHatDisplay-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($basePath + 'fonts/RedHatDisplay-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-BoldItalic.woff') format('woff'), /* Modern Browsers */
+  url($basePath + 'fonts/RedHatDisplay-BoldItalic.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+.font-family-title {
+  font-family: $font-family-title;
+}

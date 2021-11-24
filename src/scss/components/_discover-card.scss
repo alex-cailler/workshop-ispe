@@ -1,0 +1,13 @@
+.card-discover {
+  .card-discover-img {
+    max-height: 100px;
+    height: 100px;
+    max-width: 150px;
+    width: 150px;
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

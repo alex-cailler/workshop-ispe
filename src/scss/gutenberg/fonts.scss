@@ -1,0 +1,16 @@
+/* Font Size variables */
+$font-sizes: (
+        'xs'  :     18px,
+        's'   :     20px,
+        'sm'  :     22px,
+        'md'  :     30px,
+        'lg'  :     50px,
+        'xl'  :     60px,
+);
+
+/* Generate Fonts classes */
+@each $size-name, $size in $font-sizes {
+  .has-#{$size-name}-font-size {
+    font-size: $size;
+  }
+}

@@ -1,0 +1,19 @@
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 50rem;
+  & input[type="email"] {
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    font-size: 18px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: gray;
+    }
+  }
+}

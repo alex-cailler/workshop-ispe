@@ -1,0 +1,14 @@
+.card-advantage {
+  .card-advantage-img {
+    margin: 0 auto 1em auto;
+    max-height: 100px;
+    height: 100px;
+    max-width: 150px;
+    width: 150px;
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

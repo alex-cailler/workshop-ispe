@@ -1,0 +1,16 @@
+.category {
+  border-radius: 50rem;
+  padding: 10px 20px;
+  &.active {
+    border: solid 2px $secondary;
+    color: $secondary;
+  }
+}
+
+
+.article .category {
+  border-radius: 50rem;
+  padding: 5px 10px;
+  font-size: 15px;
+  row-gap: 5px;
+}

@@ -1,0 +1,77 @@
+.post-item {
+  color: #fff;
+  position: relative
+}
+
+.post-item a {
+  color: inherit;
+  display: block;
+  text-decoration: none
+}
+
+.post-item a:before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.post-item .post-thumbnail {
+  background-color: #566889;
+  border-radius: 6px;
+  height: 320px;
+  overflow: hidden
+}
+
+.post-item .post-thumbnail img {
+  display: block;
+  height: 320px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  width: 100%
+}
+
+.post-item .post-body {
+  border-radius: 6px;
+  box-shadow: 10px 30px 50px rgba(2,0,73,.2);
+  margin: -70px 25px 0;
+  padding: 12px;
+  position: relative;
+  width: calc(100% - 50px)
+}
+
+.post-item .meta-category {
+  background-color: #09b87f;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 5px 12px 3px
+}
+
+.post-item .post-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  min-height: 43px
+}
+
+.post-item time {
+  font-size: 14px;
+  font-weight: 300
+}
+
+.bg-blur-light {
+  background: rgba(92,127,199,.3);
+}
+
+.bg-blur-light, .bg-blur-white {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}

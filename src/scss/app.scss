@@ -1,0 +1,47 @@
+// Custom Variable
+@import "variable";
+
+// Libraries
+@import "bootstrap";
+
+// Gutenberg
+@import "gutenberg";
+
+
+// Pages
+
+// Layouts
+@import "layouts/article";
+@import "layouts/blog";
+@import "layouts/comments";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/search-blog";
+
+// Blocks
+@import "blocks/block-content";
+@import "blocks/block-collapse";
+@import "blocks/block-phone";
+@import "blocks/block-targets";
+
+// Components
+@import "components/article";
+@import "components/advantage-card";
+@import "components/content";
+@import "components/category";
+@import "components/discover-card";
+@import "components/list-articles";
+@import "components/list-categories";
+@import "components/main-comment";
+@import "components/newsletter";
+@import "components/nav";
+@import "components/potato";
+@import "components/post";
+@import "components/search";
+@import "components/section";
+@import "components/social-network";
+@import "components/swiper";
+@import "components/testimonial-card";
+
+// utilities
+@import "utilities/cf7";
